@@ -1,0 +1,16 @@
+<html>
+  <head>
+    <title>Movie Database-{%block title%}{%endblock%}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css')}}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css')}}">
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Acme&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+  </head>
+  <body>
+      <div class="head">
+        <a href="/">Movie Database</a>
+      </div>
+    {% block content %}{% endblock %}
+  </body>
+</html>

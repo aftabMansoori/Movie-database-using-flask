@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+{%block title%}SignUP{%endblock%}
+{% block content %}
+{% if session['logged_in'] %}
+<p>Oh no Dont show page</p>
+{% else %}
+
+<a input type="submit" href="/login" class="but-style nav_but">Login</a>
+<div class="register">
+  <div class="register_head">
+    <h2>SignUP</h2>
+  </div> 
+  <div> 
+    <form action="/register/" method="POST">
+      <input type="username" name="username" placeholder="Username" class="text_field"><br><br>
+      <input type="password" name="password" placeholder="Password" class="text_field"><br><br>
+      <input type="submit" value="SignUP" class="but-style">
+    </form>
+  </div> 
+</div>
+
+{% endif %}
+{% endblock %}

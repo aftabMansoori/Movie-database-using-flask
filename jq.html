@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JQuery</title>
+    <script type="text/javascript" src="static/js/jquery-3.4.1.slim.min.js"></script>
+</head>
+<body>
+    <script>
+        var settings = {
+        "async": true,
+        "crossDomain": true,
+        "url": "https://imdb-internet-movie-database-unofficial.p.rapidapi.com/film/joker",
+        "method": "GET",
+        "headers": {
+            "x-rapidapi-host": "imdb-internet-movie-database-unofficial.p.rapidapi.com",
+            "x-rapidapi-key": "fcc64cd83dmsh1d9fe9743aa2befp12ba09jsn892852f0b42a"
+        }
+    }
+
+        $.ajax(settings).done(function (response) {
+            console.log(response);
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,11 @@
+{%extends 'base.html'%}
+{%block title%}error{%endblock%}
+{% block content %}
+<div class="error">
+    Username or Password is incorrect!
+</div>
+<div class="error_but">
+    <a input type="submit" href="/login" class="but-style">Login</a>
+    <a input type="submit" href="/register" class="but-style">Sign UP</a>
+</div>
+{% endblock content %}    

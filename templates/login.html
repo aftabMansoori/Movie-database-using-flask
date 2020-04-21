@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+
+{%block title%}Login{%endblock%}
+
+{% block content %}
+{% if session['logged_in'] %}
+<p>You're logged in already!</p>
+{% else %}
+<a input type="submit" href="/register" class="but-style nav_but">Sign UP</a>
+<div class="login">
+  <div class="login_head">
+    <h2>Login</h2>
+  </div> 
+  <div class="login_contents"> 
+    <form action="/login" method="POST">
+      <input type="username" name="username" placeholder="Username" class="text_field"><br><br>
+      <input type="password" name="password" placeholder="Password" class="text_field"><br><br>
+      <input type="submit" class="but-style" value="Log in">
+    </form>
+  </div>
+</div>
+
+{% endif %}
+{% endblock %}
