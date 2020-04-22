@@ -1,0 +1,13 @@
+Flask            1.0.2         
+Flask-MySQLdb    0.2.0         
+Flask-SQLAlchemy 2.4.1     
+Flask-WTF        0.14.2    
+itsdangerous     1.1.0     
+Jinja2           2.10.1    
+MarkupSafe       1.1.1     
+mysqlclient      1.4.6     
+requests         2.23.0
+swampy           3.0.1
+urllib3          1.25.8
+Werkzeug         0.15.2
+WTForms          2.1
