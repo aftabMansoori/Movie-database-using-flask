@@ -8,7 +8,7 @@ import json
 
 app = Flask(__name__)
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///test.db'
-app.config['SECRET_KEY'] = 'wellthisisasecretkey'
+app.config['SECRET_KEY'] = write secret key
 db = SQLAlchemy(app)
 
 
